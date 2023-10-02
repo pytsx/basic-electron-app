@@ -1,0 +1,1 @@
+export { rootVarManager } from './rootVarManager'

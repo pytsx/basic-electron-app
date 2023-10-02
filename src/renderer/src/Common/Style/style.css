@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('@renderer/assets/Ubuntu/Ubuntu-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('@renderer/assets/Ubuntu/Ubuntu-Medium.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('@renderer/assets/Ubuntu/Ubuntu-Light.ttf');
+  font-weight: 200;
+}
+
+
+:root{
+  --scroll-color: #afafaf40;
+  --scroll-border: #afafaf40;
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+}
+img{
+  -webkit-user-drag: none;
+}
+*{
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: normal !important;
+  letter-spacing: -.001rem !important;
+  border-radius: 0 !important;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: .64rem;
+  border-left: 1px solid #afafaf40;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff01;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-color);
+}
